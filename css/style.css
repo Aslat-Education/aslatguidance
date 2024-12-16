@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7f4ed, #ffd5b5); /* Soft beige to orange gradient */
+    color: #333; /* Neutral dark gray for readability */
+}
+
+main {
+    position: relative;
+    z-index: 1; /* Ensure content is above background effects */
+}
+
+/* Header with subtle 3D animation */
+header {
+    background: url('../images/Aslat.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background covers the area */
+    color: #ffffff; /* Text color for contrast */
+    text-align: center;
+    padding: 15px 20px;
+    height: 85vh; /* Full viewport height */
+    position: relative; /* For overlay */
+    z-index: 1;
+    animation: moveBackground 5s infinite alternate; /* Apply animation */
+}
+
+/* Add a slight overlay for better text contrast */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adds a dark overlay */
+    z-index: -1; /* Keeps the overlay behind the content */
+}
+
+/* 3D animation for background image */
+@keyframes moveBackground {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.1) translateY(-10px); /* Slight zoom and upward movement */
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+header {
+    background: url('../images/Aslat.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+/* Navigation Bar */
+nav.navbar {
+    background-color: #3366cc;
+    border-bottom: 3px solid #0047ab;
+    animation: slideInFromTop 1.2s ease; /* Slide-in animation */
+    z-index: 2;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd5b5; /* Light orange on hover */
+}
+
+/* Footer */
+footer {
+    background: #772f0d;
+    color: #ffd5b5;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+/* Card Styles */
+.card {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px; /* Rounded corners for modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-title {
+    font-size: 1.3em;
+    color: #772f0d; /* Matching theme */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #333; /* Neutral dark gray for readability */
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Buttons */
+button {
+    background: #772f0d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ffd5b5;
+    color: #772f0d;
+}
+
+/* AOS Animations */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.6s;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Particles.js Integration */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Behind the content */
+    overflow: hidden;
+}
+body {
+    background: linear-gradient(135deg, #f7f4ed, #ffd5b5); /* Match with the background */
+}
+
+
+
+#animation-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Make it fill the viewport height */
+    overflow: hidden;
+}
+
+/* Image Container for 3D Animation */
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust based on your layout */
+    height: 300px;
+    perspective: 1000px; /* Enable 3D perspective */
+    margin: auto; /* Center alignment */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Smooth corners */
+    transform-origin: center; /* Set rotation origin */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.image-container img:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
