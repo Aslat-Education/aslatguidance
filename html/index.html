@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASLAT Guidance - Opening Soon</title>
 
-    <!-- Add Bootstrap CDN -->
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Custom Styles -->
@@ -23,7 +23,7 @@
             text-align: center;
             background: url('../images/OpeningSoon-1.jpg') no-repeat center center fixed;
             background-size: cover;
-            animation: backgroundEffect 6s infinite alternate; /* 5D Animation */
+            animation: backgroundEffect 6s infinite alternate;
         }
 
         /* Background 5D Animation */
@@ -45,7 +45,7 @@
         /* Centered Content */
         .content {
             z-index: 10;
-            color: white;
+            color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
@@ -53,17 +53,28 @@
             font-size: 4rem;
             font-weight: bold;
             margin-bottom: 20px;
-            animation: fadeIn 2s ease;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
         }
 
+        /* Animations */
         @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
             from {
                 opacity: 0;
                 transform: translateY(-20px);
             }
-            to {
-                opacity: 1;
+        }
+
+        @keyframes bounceEffect {
+            0%, 100% {
                 transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
             }
         }
 
@@ -74,20 +85,12 @@
             font-size: 1.2rem;
             font-weight: bold;
             background-color: #ff7f50;
-            color: white;
+            color: #fff;
             border-radius: 8px;
             text-decoration: none;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             animation: bounceEffect 2s infinite;
-        }
-
-        @keyframes bounceEffect {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .blog-btn:hover {
