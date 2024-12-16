@@ -1,0 +1,73 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('../images/OpeningSoon-1.jpg') no-repeat center center;
+    background-size: cover; /* Full-screen background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay for better contrast */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+}
+
+/* ASLAT Logo */
+.logo {
+    position: relative;
+    z-index: 2; /* Place above overlay */
+    max-width: 35%; /* Scale the logo proportionally */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Blog Button */
+.blog-btn {
+    position: relative;
+    z-index: 2; /* Place above overlay */
+    background-color: #ff6600; /* UTA button color */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.blog-btn:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
+
+.logo {
+    position: relative;
+    z-index: 2;
+    max-width: 35%; /* Scale the logo proportionally */
+    height: auto;
+    opacity: 0.6; /* Adjust transparency: 0.1 (very transparent) to 1 (opaque) */
+    transition: opacity 0.3s ease; /* Smooth effect */
+}
+
+.logo:hover {
+    opacity: 1; /* Make fully opaque on hover */
+}
