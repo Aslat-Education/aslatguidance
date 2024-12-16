@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASLAT Guidance - Opening Soon</title>
+
+    <!-- Add Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('../images/OpeningSoon-1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            animation: backgroundEffect 6s infinite alternate; /* 5D Animation */
+        }
+
+        /* Background 5D Animation */
+        @keyframes backgroundEffect {
+            0% {
+                transform: perspective(1500px) rotateX(5deg) rotateY(0deg);
+                filter: brightness(0.9);
+            }
+            50% {
+                transform: perspective(1500px) rotateX(0deg) rotateY(5deg);
+                filter: brightness(1);
+            }
+            100% {
+                transform: perspective(1500px) rotateX(5deg) rotateY(-5deg);
+                filter: brightness(1.1);
+            }
+        }
+
+        /* Centered Content */
+        .content {
+            z-index: 10;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .content h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Blog Button */
+        .blog-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #ff7f50;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            animation: bounceEffect 2s infinite;
+        }
+
+        @keyframes bounceEffect {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .blog-btn:hover {
+            background-color: #ffa07a;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Centered Content -->
+    <div class="content">
+        <h1>Meanwhile, read our blog</h1>
+        <a href="blog.html" class="blog-btn">Visit Our Blog</a>
+    </div>
+</body>
+</html>
