@@ -1,0 +1,75 @@
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #1D3557, #457B9D);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    background-color: #E76F51;
+    color: #fff;
+}
+
+.hero .btn:hover {
+    background-color: #D35445;
+}
+
+/* Service Section */
+.service-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card .card-body {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+.hero .btn:focus {
+    outline: 2px solid #E76F51;
+    box-shadow: 0 0 5px #E76F51;
+}
+
+@media (max-width: 768px) {
+    .service-card .card-body {
+        padding: 1rem;
+    }
+}
