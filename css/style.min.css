@@ -1,0 +1,51 @@
+/* Header and Navigation Bar Styling */
+.custom-header {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: #fff; /* White font color for contrast */
+}
+
+.navbar-custom {
+    background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+}
+
+.navbar-custom .nav-link {
+    color: #fff !important; /* White font color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #f8b400 !important; /* Yellowish hover effect */
+}
+
+/* Dropdown Menu Styling */
+.navbar-custom .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark dropdown */
+    border: none;
+}
+
+.navbar-custom .dropdown-menu .dropdown-item {
+    color: #fff; /* White text */
+}
+
+.navbar-custom .dropdown-menu .dropdown-item:hover {
+    background-color: #f8b400; /* Yellow highlight */
+    color: #000; /* Black text on hover */
+}
+
+/* Dropdown Hover Effect */
+.navbar .nav-item:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.custom-header, .navbar-custom .nav-link {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .navbar .nav-item:hover .dropdown-menu {
+        display: none;
+    }
+}
+
