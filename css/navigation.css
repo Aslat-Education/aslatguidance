@@ -1,0 +1,51 @@
+/* Transparent Navigation Bar */
+nav {
+    background: #eaeaea !important; /* SS2 Background Color */
+    border-bottom: 1px solid #d6d6d6; /* Optional clean bottom border */
+    position: sticky; /* Fixed on top */
+    top: 0;
+    z-index: 1000; /* Ensure it's always on top */
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link, 
+.navbar-brand {
+    color: #333333 !important; /* Dark text for visibility */
+    font-weight: 600; /* Slight boldness */
+    text-decoration: none;
+    text-shadow: none; /* Remove any existing text shadows */
+}
+
+/* Navigation Link Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #0078d7 !important; /* Light blue hover color */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Mobile View Navbar Toggle Icon */
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light border for contrast */
+}
+
+/* Mobile Navigation Links */
+.navbar-nav {
+    background: #eaeaea; /* Ensure background remains consistent in mobile */
+}
+
+/* Ensure Dropdown Menus Match Design */
+.dropdown-menu {
+    background-color: #eaeaea !important; /* Match SS2 background */
+    border: none; /* Remove dropdown border */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #333333 !important; /* Text color */
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: #577ea5; /* Light hover effect */
+    color: #0078d7 !important; /* Hover text color */
+}

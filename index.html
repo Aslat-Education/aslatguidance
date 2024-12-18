@@ -4,96 +4,308 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aslat Guidance Education</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+
+<!-- CSS Dependencies -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+
+
 </head>
 <body>
-
-    <!-- Header Placeholder -->
-<div id="header" style="min-height: 80px; background: #f8f9fa;"></div>
-
-<!-- Navigation Placeholder -->
-<div id="navigation" style="min-height: 60px; background: #343a40;"></div>
-
     <!-- Header Section -->
-    <div id="header"></div>
-    
-    <!-- Navigation Section -->
-    <div id="navigation"></div>
+        <!-- Top Bar with Logo and Contact Info -->
+    <div class="container-fluid py-3" style="background: transparent;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left: Logo -->
+            <div class="d-flex align-items-center">
+                <a href="index.html">
+                    <img src="assets/images/aslat-logo.png" alt="ASLAT Logo" style="height: 120px;">
+                </a>
+            </div>
 
-    <!-- Hero Section -->
-    <section class="position-relative text-white" style="height: 100vh;">
-        <div style="background: url('images/background.webp') no-repeat center center fixed;
-                    background-size: cover;
-                    position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-        </div>
-        <div class="container text-center d-flex align-items-center justify-content-center h-100">
-            <h1 class="display-4 fw-bold">Welcome to Aslat Guidance Education</h1>
-            <p class="lead">Your trusted partner in educational services and guidance.</p>
-        </div>
-    </section>
+            <!-- Right: Contact Info -->
+            <div class="d-flex align-items-center">
+                <!-- Find Us -->
+                <div class="me-4 text-dark text-center">
+                    <a href="https://maps.app.goo.gl/tmqjob5bfTYWBsoM7" target="_blank" class="text-dark text-decoration-none" aria-label="Find Us">
+                        <i class="bi bi-geo-alt-fill text-primary" style="font-size: 1.5rem;"></i>
+                        <strong>Find Us</strong>
+                    </a>
+                    <div class="small">ALE Complex, Second Floor,<br>Boudha-Jorpati Road, Arabank</div>
+                </div>
 
-    <!-- Services Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/service1.jpg" class="card-img-top" alt="Test Preparation">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Test Preparation</h5>
-                            <p>Expert guidance for IELTS, TOEFL, GRE, and GMAT preparations.</p>
-                        </div>
-                    </div>
+                <!-- Call Us -->
+                <div class="me-4 text-dark text-center">
+                    <a href="tel:+1234567890" class="text-dark text-decoration-none" aria-label="Call Us">
+                        <i class="bi bi-telephone-fill text-primary" style="font-size: 1.5rem;"></i>
+                        <strong>Call Us</strong>
+                    </a>
+                    <div class="small">+977 1234567</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/service2.jpg" class="card-img-top" alt="College Applications">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">College Applications</h5>
-                            <p>Personalized assistance for college applications and admissions.</p>
-                        </div>
-                    </div>
+
+                <!-- Email Us -->
+                <div class="me-4 text-dark text-center">
+                    <a href="mailto:inquiry.AslatGuidance@gmail.com" class="text-dark text-decoration-none" aria-label="Email Us">
+                        <i class="bi bi-envelope-fill text-primary" style="font-size: 1.5rem;"></i>
+                        <strong>Email Us</strong>
+                    </a>
+                    <div class="small">inquiry.AslatGuidance@gmail.com</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/service3.jpg" class="card-img-top" alt="Visa Consultation">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Visa Consultation</h5>
-                            <p>Step-by-step support for your visa application process.</p>
-                        </div>
-                    </div>
+
+                <!-- Book Appointment -->
+                <div class="text-dark text-center">
+                    <a href="https://docs.google.com/forms/example" target="_blank" class="text-dark text-decoration-none" aria-label="Book Appointment">
+                        <i class="bi bi-calendar-check text-primary" style="font-size: 1.5rem;"></i>
+                        <strong>Book Appointment</strong>
+                    </a>
+                    <div class="small">Schedule a Consultation</div>
                 </div>
             </div>
         </div>
+    </div>
+
+        <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <!-- Replace Logo with Text -->
+        <a class="navbar-brand fw-bold" href="index.html" style="font-size: 1.5rem; color: #333; text-decoration: none;">
+            ASLAT Guidance
+        </a>
+        <!-- Toggler Button (for Mobile View) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <!-- About Us -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Our Story</a></li>
+                        <li><a class="dropdown-item" href="#">Mission & Vision</a></li>
+                        <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+                    </ul>
+                </li>
+                        <!-- Study in USA -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Study in USA</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Eligibility Criteria</a></li>
+                                <li><a class="dropdown-item" href="#">Universities & Colleges</a></li>
+                                <li><a class="dropdown-item" href="#">English Proficiency Requirements</a></li>
+                                <li><a class="dropdown-item" href="#">Standardized Tests (Optional)</a></li>
+                                <li><a class="dropdown-item" href="#">Study Costs</a></li>
+                            </ul>
+                        </li>
+                        <!-- Our Services -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Study Abroad Counseling</a></li>
+                                <li><a class="dropdown-item" href="#">Course and University Selection</a></li>
+                                <li><a class="dropdown-item" href="#">University Application Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Test Preparation</a></li>
+                                <li><a class="dropdown-item" href="#">Scholarship & Financial Aid Guidance</a></li>
+                                <li><a class="dropdown-item" href="#">Visa Documentation & Application Support</a></li>
+                                <li><a class="dropdown-item" href="#">Pre-Departure Guidance</a></li>
+                                <li><a class="dropdown-item" href="#">Post-Arrival Support</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Academics / Intakes -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Academics / Intakes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Fall Semester</a></li>
+                                <li><a class="dropdown-item" href="#">Spring Semester</a></li>
+                                <li><a class="dropdown-item" href="#">Summer Programs</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Life in USA -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Life in USA</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Living Expenses</a></li>
+                                <li><a class="dropdown-item" href="#">Cultural Adjustment</a></li>
+                                <li><a class="dropdown-item" href="#">Part-Time Jobs</a></li>
+                                <li><a class="dropdown-item" href="#">Post-Study Opportunities</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Other Links -->
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Find Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white" style="height: 100vh; background: url('assets/images/background.webp') center center / cover no-repeat;">
     </section>
+    <!-- Custom Section with Background Color -->
+    <!-- Custom Section with Two Columns -->
+<!-- Custom Section with Two Columns -->
+<section class="custom-highlight-section" style="background-color: #e6a862; color: #000;">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <!-- Left Side: Heading -->
+            <div class="col-md-6 text-start">
+                <h2 class="fw-bold display-4">
+                    Your Journey to the USA Starts Here<br>
+                    Real Guidance, Real Support!                </h2>
+            </div>
+
+            <!-- Right Side: Paragraph -->
+            <div class="col-md-6 text-start">
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    What sets <strong>ASLAT Guidance Education Consultancy</strong> apart is our real experience. 
+                    With over a decade of living, studying, and working in the US, we provide tailored support – 
+                    from planning your studies to understanding life essentials like bank accounts, 
+                    driver’s licenses, and cultural adjustments.
+                </p>
+                <p style="font-size: 1rem; line-height: 1.8;">
+                    For students who struggle after arriving in the US – especially those facing challenges 
+                    for 6 months or longer – we provide an additional helping hand. Through our trusted network, 
+                    you gain access to mentors and practical advice to help you find stability, grow, and thrive.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Tailored Services Section -->
+<section class="services-section py-5" style="background-color: #f8f9fa;">
+    <div class="container text-center">
+        <!-- Section Title -->
+        <h2 class="fw-bold mb-4" style="color: #333;">Our Tailored Services</h2>
+        <p class="mb-5" style="color: #555; font-size: 1.1rem;">
+            Explore our comprehensive services designed to guide you through every step of your study abroad journey.
+        </p>
+
+        <!-- Services Grid -->
+        <div class="row gy-4">
+            <!-- Service 1: Study Abroad Counseling -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">Study Abroad Counseling</h5>
+                    <p>Expert guidance on career fields, programs, and majors tailored to your goals.</p>
+                </div>
+            </div>
+
+            <!-- Service 2: Course and University Selection -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">Course & University Selection</h5>
+                    <p>Compare universities, programs, and majors to find the perfect fit for your aspirations.</p>
+                </div>
+            </div>
+
+            <!-- Service 3: University Application Assistance -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">University Application Assistance</h5>
+                    <p>Comprehensive support for applications, document preparation, and submission tracking.</p>
+                </div>
+            </div>
+
+            <!-- Service 4: Test Preparation -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">Test Preparation</h5>
+                    <p>Prepare for IELTS, TOEFL, SAT, GRE, and GMAT with expert strategies and resources.</p>
+                </div>
+            </div>
+
+            <!-- Service 5: Scholarship & Financial Aid Guidance -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">Scholarship & Financial Aid</h5>
+                    <p>Assistance in identifying, applying, and securing scholarships for financial support.</p>
+                </div>
+            </div>
+
+            <!-- Service 6: Visa Application Support -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">Visa Application Support</h5>
+                    <p>Step-by-step guidance for the F-1 visa, DS-160 form, and mock interviews.</p>
+                </div>
+            </div>
+
+            <!-- Service 7: Pre-Departure Guidance -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">Pre-Departure Guidance</h5>
+                    <p>Preparing you for life in the USA with cultural tips and essential information.</p>
+                </div>
+            </div>
+
+            <!-- Service 8: Post-Arrival Support -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">Post-Arrival Support</h5>
+                    <p>Continued assistance after arrival with bank accounts, SIM cards, and campus orientation.</p>
+                </div>
+            </div>
+
+            <!-- Service 9: Student Life Support -->
+            <div class="col-md-4">
+                <div class="service-card p-4 shadow-sm bg-white rounded">
+                    <h5 class="fw-bold">Student Life Support</h5>
+                    <p>Guidance on living expenses, part-time jobs, and post-study opportunities like OPT/CPT.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
 
     <!-- Footer Section -->
-    <div id="footer"></div>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 ASLAT Guidance Education Consultancy. All rights reserved.</p>
+            <p>
+                <a href="https://facebook.com" target="_blank" class="text-white me-3" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-white me-3" aria-label="Twitter">
+                    <i class="bi bi-twitter"></i> Twitter
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-white" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+            </p>
+        </div>
+    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Script to Include Header, Navigation, and Footer -->
+<!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            fetch("partials/header.html")
-                .then(res => res.text())
-                .then(data => document.getElementById("header").innerHTML = data);
-
-            fetch("partials/navigation.html")
-                .then(res => res.text())
-                .then(data => document.getElementById("navigation").innerHTML = data);
-
-            fetch("partials/footer.html")
-                .then(res => res.text())
-                .then(data => document.getElementById("footer").innerHTML = data);
+        AOS.init({
+            duration: 1200,
+            once: true,
         });
     </script>
+
+
 </body>
 </html>
