@@ -90,6 +90,7 @@ a:hover {
     padding: 8px 12px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 5vh;
 }
 
 .navbar .nav-link:hover {
@@ -100,7 +101,7 @@ a:hover {
 }
 
 .navbar .dropdown-menu {
-    background-color: #fff;
+    background-color: #e6a862;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -112,7 +113,7 @@ a:hover {
 }
 
 .navbar .dropdown-item:hover {
-    background-color: #e6b877;
+    background-color: white;
     color: #000;
     border-radius: 3px;
 }
@@ -212,3 +213,40 @@ header .d-flex > div:hover strong {
     animation: shiver 0.2s infinite;
     z-index: 1000;
 } 
+#header{
+    background: linear-gradient(white,#e6b877);
+}
+.carousel-item img{
+    height: 80vh;
+   
+}
+.img-fluid{
+    height: 50vh;
+    width: 100%;
+}
+.cta-button {
+    background-color: transparent;
+    border: 2px solid black;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease; 
+}
+
+.cta-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.arrow-icon {
+    margin-left: 1px;
+}
+@media (min-width: 768px) { 
+    .heading { font-size: 9rem; }
+}
+.mb-0 mb-md-3 mt-0 mt-md-3{
+    opacity: 0.8;
+}

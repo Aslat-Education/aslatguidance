@@ -26,56 +26,57 @@
     <!-- Header Section -->
  <header id="header">       <!-- Top Bar with Logo and Contact Info -->
         <div class="container-fluid py-3" style="background: transparent;"> 
-            <div class="container"> <div class="row justify-content-between align-items-center"> 
+            
+                <div class="row justify-content-between align-items-center"> 
                 <!-- Left: Logo --> 
                 <div class="col-12 col-md-auto text-center text-md-start"> 
-                    <a href="index.html"> <img src="assets/images/aslat-logo.png" alt="ASLAT Logo" class="img-fluid" style="height: 120px;"> </a> 
+                    <a href="index.html"> <img src="assets/images/aslat-logo.png" alt="ASLAT Logo" class="img-fluid" style="height: 70px;"> </a> 
                 </div> 
                 <!-- Right: Contact Info --> 
                  <div class="col-12 col-md"> 
                     <div class="row justify-content-center justify-content-md-end"> 
                         <!-- Find Us --> 
-                        <div class="col-6 col-md-3 text-dark text-center mb-3 mb-md-0"> 
+                        <div class="col-6 col-md-2 text-dark text-center mb-3 mb-md-0"> 
                             <a href="https://maps.app.goo.gl/tmqjob5bfTYWBsoM7" target="_blank" class="text-dark text-decoration-none" aria-label="Find Us"> 
                                 <i class="bi bi-geo-alt-fill text-primary" style="font-size: 1.5rem;"></i> 
                                 <strong>Find Us</strong></a> 
-                                <div class="small">ALE Complex, Second Floor,<br>Boudha-Jorpati Road, Arabank</div> 
+                                 
                             </div> 
                         <!-- Call Us --> 
-                        <div class="col-6 col-md-3 text-dark text-center mb-3 mb-md-0"> 
+                        <div class="col-6 col-md-2 text-dark text-center mb-3 mb-md-0"> 
                                 <a href="tel:+1234567890" class="text-dark text-decoration-none" aria-label="Call Us"> 
                                     <i class="bi bi-telephone-fill text-primary" style="font-size: 1.5rem;"></i>
                                      <strong>Call Us</strong> </a> 
-                                     <div class="small">+977 1234567</div> 
+                                      
                                     </div> 
                         <!-- Email Us --> 
-                        <div class="col-6 col-md-3 text-dark text-center mb-3 mb-md-0"> 
+                        <div class="col-6 col-md-2 text-dark text-center mb-3 mb-md-0"> 
                                 <a href="mailto:inquiry.AslatGuidance@gmail.com" class="text-dark text-decoration-none" aria-label="Email Us"> 
                                         <i class="bi bi-envelope-fill text-primary" style="font-size: 1.5rem;"></i> 
                                         <strong>Email Us</strong> </a> 
-                                        <div class="small">inquiry.AslatGuidance@gmail.com</div> 
+                                        
                                     </div> 
                         <!-- Book Appointment --> 
-                        <div class="col-6 col-md-3 text-dark text-center"> 
+                        <div class="col-6 col-md-2 text-dark text-center"> 
                             <a href="https://docs.google.com/forms/example" target="_blank" class="text-dark text-decoration-none" aria-label="Book Appointment"> 
                                 <i class="bi bi-calendar-check text-primary" style="font-size: 1.5rem;"></i> 
-                                <strong>Book Appointment</strong> </a> 
-                                <div class="small">Schedule a Consultation</div> 
+                                <strong>Book</strong> </a> 
+                                
                             </div> 
                         </div> 
                     </div> </div> 
-                </div> 
+                 
             </div>
         <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
         <!-- Replace Logo with Text -->
         <a class="navbar-brand fw-bold" href="index.html" style="font-size: 1.5rem; color: #333; text-decoration: none;">
-            ASLAT Guidance
+            ASLAT GUIDANCE
         </a>
         <!-- Toggler Button (for Mobile View) -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggle-btn">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navbar Links -->
@@ -85,8 +86,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Our Story</a></li>
-                        <li><a class="dropdown-item" href="#">Mission & Vision</a></li>
+                        <li><a class="dropdown-item" href="story.html">Our Story</a></li>
+                        <li><a class="dropdown-item" href="mission.html">Mission & Vision</a></li>
                         <li><a class="dropdown-item" href="team.html">Meet the Team</a></li>
                     </ul>
                 </li>
@@ -138,9 +139,9 @@
                         </li>
                         
                         <!-- Other Links -->
-                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Find Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Find Us</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -148,9 +149,16 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section text-white" style="height: 100vh; background: url('assets/images/background.webp') center center / cover no-repeat;">
-    </section>
-    <!--messenger button-->
+    
+    <div class="container-fluid p-0"> 
+        <div class="row g-0"> 
+            <div class="col-12"> 
+                <img src="./images/OpeningSoon-1.jpg" class="img-fluid w-100" alt="Sample Image" id="hero-img"> 
+            </div> 
+        </div> 
+    </div>
+   
+        <!--messenger button-->
     <a href="https://m.me/YourMessengerID" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0
      m-3 d-flex align-items-center justify-content-center " style="width: 60px; height: 60px;" id="shiver-button"
      target="_blank">
@@ -186,7 +194,6 @@
         </div>
     </div>
 </section>
-
 
 <!-- Tailored Services Section -->
 <section class="services-section py-5" style="background-color: #f8f9fa;">
@@ -273,31 +280,114 @@
         </div>
     </div>
 </section>
+<div class="container-fluid mb-4" style="background-color: #e6a862;">
+    <div class="cloumn ms-0 ms-md-5 " >
+        <div class="col-md-12 ps-2 ps-md-5 py-md-5 py-5 d-flex ">
+            <div class="col-md-8 d-block">
+            <h1 class="fs-3.5 fw-bold mb-1.5">There's a University waiting to fulfil your study goals</h1>
+            <p class="fs-1.2 mb-2" style="opacity: 0.9;">Get expert advice on choosing education institutes, addressing the admissions process, scholarships, etc.</p>
+            </div>
+
+            
+            <a href="#" class="cta-button pt-0">
+                Get top education consultancy in Nepal
+                <span class="arrow-icon">→</span>
+            </a>
+           
+        </div>
+       
+    </div>
+</div>
+
+
+<div class="container-fluid ps-3 ps-md-5 mb-4" > 
+    <div class="row ms-0 ms-md-4 "> <!-- Image Div --> 
+         <!-- Paragraph Div --> 
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center ps-0 ps-md-4 "> 
+            <h1 class="fw-bold pb-4 ">Embark Your Journey With Us</h1> 
+            <ul class="list-group"> 
+                <li class="list-group-item fw-bold" style="background-color: transparent;">➤ Visa Consultation 
+                    <p class="fw-normal">
+                        Our experts provide personalized consultations tailored to your specific needs and goals. We help you understand the various visa options available and recommend the best fit based on your circumstances.
+                    </p> 
+                </li> <li class="list-group-item fw-bold" style="background-color: transparent;">➤ Admission advice 
+                    <p class="fw-normal">
+                        We offer personalized consultations to understand your academic goals, strengths, and aspirations. Our advisors help you identify the best-fit institutions and programs that align with your career objectives.
+                    </p> 
+                </li> <li class="list-group-item fw-bold" style="background-color: transparent;">➤ Travel and Stay 
+                    <p class="fw-normal">
+                        Embarking on an international journey involves meticulous planning, and our Travel and Stay Services are designed to make your experience as smooth and enjoyable as possible. From arranging your travel logistics to ensuring comfortable accommodation, our dedicated team is here to provide comprehensive support every step of the way.
+                    </p> 
+                </li> 
+            </ul> 
+        </div> 
+        <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex align-items-center justify-content-center "> 
+            <img src="./images/girl.png" class="img-fluid rounded " alt="Sample Image" style="width: 80%;"> 
+        </div>
+    </div> 
+</div>
 
 
 
     <!-- Footer Section -->
-    <footer class="bg-dark text-white py-4" id="footer">
-        <div class="container text-center">
-            <p>&copy; 2024 ASLAT Guidance Education Consultancy. All rights reserved.</p>
-            <p>
-                <a href="https://facebook.com" target="_blank" class="text-white me-3" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i> Facebook
-                </a>
-                <a href="https://twitter.com" target="_blank" class="text-white me-3" aria-label="Twitter">
-                    <i class="bi bi-twitter"></i> Twitter
-                </a>
-                <a href="https://instagram.com" target="_blank" class="text-white" aria-label="Instagram">
-                    <i class="bi bi-instagram"></i> Instagram
-                </a>
-            </p>
-        </div>
+    <footer class="bg-dark text-white pt-4" id="footer"> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-12"> 
+                    <h5>&copy; 2024 ASLAT Guidance Education Consultancy. All rights reserved.</h5> 
+                </div> 
+            </div> 
+            <div class="row" > 
+                <div class="col-6 col-md-3 mb-3 mb-md-0"> 
+                    <h3>Student Services</h3> 
+                    <ul class="text-start" type="none">
+                        <li class="ps-0 ps-md-4 fs-5 mb-2 "><a href="" class="text-white">Visa Application</a></li>
+                        <li class="ps-0 ps-md-4 fs-5 mb-2"><a href="" class="text-white">Test Preparation</a></li>
+                        <li class="ps-0 ps-md-4 fs-5 mb-2"><a href="" class="text-white">Study Abroad Accomodation</a></li>
+                        
+                    </ul>
+                
+                </div> 
+                <div class="col-6 col-md-3 mb-3 mb-md-0" > 
+                    <h3 ">About</h3> 
+                    <ul class="text-start" type="none">
+                        <li class="ps-0 ps-md-5 fs-5 mb-2"><a href="story.html" class="text-white">Our Story</a></li>
+                        <li class="ps-0 ps-md-5 fs-5 mb-2"><a href="mission.html" class="text-white">Mission and Vision</a></li>
+                        <li class="ps-0 ps-md-5 fs-5 mb-2"><a href="team.html" class="text-white">Meet The Team</a></li>
+                    </ul>
+                    
+                </div> 
+                <div class="col-6 col-md-3 mb-3 mb-md-0"> 
+                    <h3>Quick Links</h3> 
+                    <ul class="text-start" type="none">
+                        
+                        <li class="ps-0 ps-md-5 fs-5 mb-2"><a href="blog.html" class="text-white">Blog</a></li>
+                        <li class="ps-0 ps-md-5 fs-5 mb-2"><a href="#header" class="text-white">Contact US</a></li>
+                    </ul>
+                </div> 
+                <div class="col-12 col-md-3 d-flex flex-column"> 
+                    <h3>Social Links</h3>
+                    <div class="mb-0 mb-md-3 mt-0 mt-md-3">
+                    <a href="https://facebook.com" target="_blank" class="text-white me-3" aria-label="Facebook"> 
+                        <i class="bi bi-facebook"></i> Facebook 
+                    </a> 
+                    <a href="https://twitter.com" target="_blank" class="text-white me-3" aria-label="Twitter"> 
+                        <i class="bi bi-twitter"></i> Twitter 
+                    </a> 
+                    <a href="https://instagram.com" target="_blank" class="text-white" aria-label="Instagram"> 
+                        <i class="bi bi-instagram"></i> Instagram 
+                    </a>
+                </div>
+                    <img src="./images/Aslat.jpg" alt="logo" class="h-50"> 
+                </div> 
+            </div> 
+        </div> 
     </footer>
 
 <!-- AOS JS -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- For Popper.js -->
+  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script>
