@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Aslat Guidance – Study Abroad in the USA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aslat Guidance – Study Abroad Consultancy Nepal</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+  <!-- Sticky Chat Widget -->
+  <div id="chat-widget">
+    <a href="https://wa.me/977XXXXXXXXX" target="_blank" class="chat-btn shadow"><img src="assets/img/whatsapp.svg" alt="WhatsApp"></a>
+    <a href="contact.html" class="chat-btn shadow"><img src="assets/img/chat.svg" alt="Contact"></a>
+  </div>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Aslat Guidance</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -18,8 +25,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="shortlisting.html">University Shortlisting</a></li>
-          <li class="nav-item"><a class="nav-link" href="#postdeparture">Post-Departure (US)</a></li>
+          <li class="nav-item"><a class="nav-link" href="#search-tool">Search Universities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#postdeparture">Post-Departure</a></li>
           <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="contact.html">Book Consultation</a></li>
         </ul>
@@ -28,24 +35,54 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-primary text-white text-center py-5">
+  <header class="hero-section text-center text-white d-flex align-items-center">
     <div class="container">
-      <h1 class="display-4 fw-bold">Your Trusted Partner for Studying Abroad</h1>
-      <p class="lead">Expert guidance for Nepali students to the USA, Australia, Canada, and UK – from test prep to post-arrival support.</p>
-      <a href="shortlisting.html" class="btn btn-light btn-lg mt-3">Find Your University Match</a>
+      <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">Your Gateway to Studying in the USA</h1>
+      <p class="lead mt-3 mb-4 animate__animated animate__fadeInUp">Step-by-step support for Nepali students: test prep, university selection, visa, and beyond.</p>
+      <a href="#search-tool" class="btn btn-lg btn-warning me-2 animate__animated animate__fadeInUp">Find My University</a>
+      <a href="contact.html" class="btn btn-lg btn-light animate__animated animate__fadeInUp">Book Free Consultation</a>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-md-8">
+          <img src="assets/img/hero-usa.png" alt="US University" class="img-fluid hero-img animate__animated animate__fadeInUp" style="max-height:320px">
+        </div>
+      </div>
     </div>
   </header>
+
+  <!-- Animated Stats Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 mb-4">
+          <div class="counter" data-count="2000">0</div>
+          <div class="small text-muted">Students Placed</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="counter" data-count="100">0</div>
+          <div class="small text-muted">US Universities</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="counter" data-count="99">0</div>
+          <div class="small text-muted">Visa Success (%)</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="counter" data-count="15">0</div>
+          <div class="small text-muted">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Services Section -->
   <section id="services" class="py-5">
     <div class="container">
-      <h2 class="mb-4 text-center">Our Core Services</h2>
-      <div class="row g-4">
+      <h2 class="mb-4 text-center">Our Services</h2>
+      <div class="row g-4 text-center">
         <div class="col-md-4">
           <div class="card h-100 shadow">
             <div class="card-body">
               <h5 class="card-title">University Application Assistance</h5>
-              <p class="card-text">Get step-by-step support for the entire university application process in the USA, Australia, Canada, and UK.</p>
+              <p class="card-text">Guided support for the entire US university application process, start to finish.</p>
             </div>
           </div>
         </div>
@@ -53,7 +90,7 @@
           <div class="card h-100 shadow">
             <div class="card-body">
               <h5 class="card-title">Test Preparation</h5>
-              <p class="card-text">Expert coaching for IELTS, TOEFL, and other standardized tests. Boost your scores with proven strategies.</p>
+              <p class="card-text">IELTS, TOEFL and more. Proven strategies and expert coaching to boost your scores.</p>
             </div>
           </div>
         </div>
@@ -61,7 +98,7 @@
           <div class="card h-100 shadow">
             <div class="card-body">
               <h5 class="card-title">Personalized University Shortlisting</h5>
-              <p class="card-text">We shortlist universities based on your academics and budget. Try our <a href="shortlisting.html">interactive tool</a>!</p>
+              <p class="card-text">Get a shortlist of universities based on your academics, test scores, and budget.</p>
             </div>
           </div>
         </div>
@@ -69,7 +106,36 @@
     </div>
   </section>
 
-  <!-- Post-Departure Services Section (Home) -->
+  <!-- Interactive University Search Tool (Placeholder) -->
+  <section id="search-tool" class="py-5 bg-gradient">
+    <div class="container">
+      <h2 class="mb-4 text-center text-white">Find Your Best-Fit US University</h2>
+      <form id="searchForm" class="mx-auto" style="max-width: 600px;">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <input type="number" min="2.0" max="4.0" step="0.01" class="form-control" placeholder="Your GPA (4.0)" id="gpa" required>
+          </div>
+          <div class="col-md-4">
+            <input type="number" min="5000" step="500" class="form-control" placeholder="Annual Budget ($)" id="budget" required>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select" id="major" required>
+              <option value="">Major</option>
+              <option>Computer Science</option>
+              <option>Business</option>
+              <option>Engineering</option>
+              <option>Health Sciences</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-warning btn-lg mt-4 w-100">Show Matching Universities</button>
+      </form>
+      <div id="searchResults" class="mt-4"></div>
+    </div>
+  </section>
+
+  <!-- Post-Departure Services Section -->
   <section id="postdeparture" class="py-5 bg-light">
     <div class="container">
       <h2 class="mb-4 text-center">Post-Departure Services (USA)</h2>
@@ -116,41 +182,49 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
+  <!-- Testimonials Slider -->
   <section id="testimonials" class="py-5">
     <div class="container">
       <h2 class="mb-4 text-center">What Our Students Say</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shadow h-100">
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Aslat helped me get into my dream university in the US and supported me even after I arrived. Their advice on OPT was a game-changer!</p>
-                <footer class="blockquote-footer mt-2">Srijana, Boston University</footer>
-              </blockquote>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card shadow mx-auto" style="max-width: 600px;">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Aslat helped me get into my dream university in the US and supported me even after I arrived. Their advice on OPT was a game-changer!</p>
+                  <footer class="blockquote-footer mt-2">Srijana, Boston University</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow mx-auto" style="max-width: 600px;">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>The shortlisting tool matched me with great universities within my budget. The entire application process was stress-free.</p>
+                  <footer class="blockquote-footer mt-2">Prakash, University of Texas</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow mx-auto" style="max-width: 600px;">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>My parents felt confident because of Aslat’s honest advice and personal attention. Highly recommended!</p>
+                  <footer class="blockquote-footer mt-2">Anisha, University of Toronto</footer>
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card shadow h-100">
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>The shortlisting tool matched me with great universities within my budget. The entire application process was stress-free.</p>
-                <footer class="blockquote-footer mt-2">Prakash, University of Texas</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow h-100">
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>My parents felt confident because of Aslat’s honest advice and personal attention. Highly recommended!</p>
-                <footer class="blockquote-footer mt-2">Anisha, University of Toronto</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+        </button>
       </div>
     </div>
   </section>
@@ -161,7 +235,7 @@
       <small>&copy; 2025 Aslat Guidance. All Rights Reserved.</small>
     </div>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/home.js"></script>
 </body>
 </html>
