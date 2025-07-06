@@ -1,19 +1,4 @@
-// Animated Counter Logic
-document.querySelectorAll('.counter').forEach(counter => {
-  counter.innerText = '0';
-  const updateCounter = () => {
-    const target = +counter.getAttribute('data-count');
-    const current = +counter.innerText.replace(/,/g, '');
-    const increment = Math.ceil(target / 80);
-    if (current < target) {
-      counter.innerText = (current + increment).toLocaleString();
-      setTimeout(updateCounter, 30);
-    } else {
-      counter.innerText = target.toLocaleString();
-    }
-  };
-  updateCounter();
-});
+// No longer need animated counters, but can add simple card fade-in
 
 // University Search Tool Demo (replace with real data/API later)
 const demoUniversities = [
