@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aslat Guidance - Study Abroad Consultancy</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <script src="assets/js/main.js" defer></script>
   <style>
-    /* Fallback styles until custom CSS is applied */
+    /* Custom styles for video and interactivity */
     #hero-video {
       object-fit: cover;
       width: 100%;
@@ -32,7 +30,7 @@
   <!-- Navigation -->
   <nav class="bg-blue-900 text-white py-4 fixed w-full top-0 z-10 shadow-lg">
     <div class="container mx-auto px-4 flex justify-between items-center">
-      <img src="assets/img/logo-full.png" alt="Aslat Guidance Logo" class="h-10">
+      <h1 class="text-xl font-bold">Aslat Guidance</h1>
       <div class="space-x-4">
         <a href="#services" class="nav-link hover:underline">Services</a>
         <a href="#why-aslat" class="nav-link hover:underline">Why ASLAT?</a>
@@ -45,7 +43,7 @@
   <!-- Hero Section with Background Video -->
   <section id="hero" class="relative h-screen flex items-center justify-center text-white">
     <video id="hero-video" autoplay muted loop playsinline>
-      <source src="assets/video/hero-video.mp4" type="video/mp4">
+      <source src="assets/hero-video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
@@ -142,12 +140,6 @@
         <textarea id="message" placeholder="Your Message" class="w-full mb-4 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-700 h-32"></textarea>
         <button onclick="submitForm()" class="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-800">Send Message</button>
       </div>
-      <div class="mt-8 text-lg">
-        <p><strong>Address:</strong> ALE Complex, 2nd Floor, Boudha - Jorpati road, Gokarneshwor - 06, Kathmandu, Nepal 44600</p>
-        <p><strong>Phone:</strong> +977 970 105 1182</p>
-        <p><strong>WhatsApp:</strong> +977 970 105 1182 / +1 580 596 6002</p>
-        <p><strong>Email:</strong> <a href="mailto:inquiry.AslatGuidance@gmail.com" class="text-blue-700 hover:underline">inquiry.AslatGuidance@gmail.com</a></p>
-      </div>
     </div>
   </section>
 
@@ -157,5 +149,49 @@
       <p>© 2025 Aslat Guidance. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Interactivity -->
+  <script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Highlight active nav link on scroll
+    window.addEventListener('scroll', () => {
+      const sections = ['services', 'why-aslat', 'post-departure', 'contact'];
+      let current = '';
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element.getBoundingClientRect().top <= 100) {
+          current = section;
+        }
+      }
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Form submission placeholder (no backend, shows alert)
+    function submitForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      if (name && email && message) {
+        alert('Thank you for your message! We will get back to you soon.');
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+      } else {
+        alert('Please fill out all fields.');
+      }
+    }
+  </script>
 </body>
 </html>
