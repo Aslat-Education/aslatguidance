@@ -1,96 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aslat Guidance - Your trusted pathway to higher education abroad.">
-    <title>Aslat Guidance - Home</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aslat Guidance - Study Abroad Consultancy</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="assets/js/main.js" defer></script>
+  <style>
+    /* Fallback styles until custom CSS is applied */
+    #hero-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    .nav-link.active {
+      border-bottom: 2px solid #ffffff;
+    }
+  </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">Aslat Guidance</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="why-aslat.html">Why Aslat?</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-blue-900 text-white py-4 fixed w-full top-0 z-10 shadow-lg">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <img src="assets/img/logo-full.png" alt="Aslat Guidance Logo" class="h-10">
+      <div class="space-x-4">
+        <a href="#services" class="nav-link hover:underline">Services</a>
+        <a href="#why-aslat" class="nav-link hover:underline">Why ASLAT?</a>
+        <a href="#post-departure" class="nav-link hover:underline">Post-Departure</a>
+        <a href="#contact" class="nav-link hover:underline">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <video autoplay muted loop id="hero-video">
-            <source src="assets/video/hero-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-            <h1>Your Trusted Pathway to Education Abroad</h1>
-            <p>Dreaming big? Let's make it happen.</p>
-            <a href="services.html" class="cta">Explore Services</a>
+  <!-- Hero Section with Background Video -->
+  <section id="hero" class="relative h-screen flex items-center justify-center text-white">
+    <video id="hero-video" autoplay muted loop playsinline>
+      <source src="assets/video/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+    <div class="relative z-10 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Your Journey to Study Abroad Begins Here</h2>
+      <p class="text-lg md:text-xl mb-6">Expert guidance for Nepali students to the U.S., Australia, Canada, and the UK.</p>
+      <a href="#contact" class="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-800">Start Now</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-university text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Personalized University Selection</h3>
+          <p>Tailored recommendations based on your GPA, goals, and budget.</p>
         </div>
-    </section>
-
-    <!-- Why Aslat Section -->
-    <section class="why-aslat">
-        <h2>Why Choose Aslat?</h2>
-        <p>With firsthand experience and an authentic approach, we guide students every step of the way—from university selection to post-departure services.</p>
-        <a href="why-aslat.html" class="cta">Learn More</a>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-overview">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Study Destinations</h3>
-                <p>USA, Australia, Canada—explore your options.</p>
-                <a href="services.html" class="cta">Discover More</a>
-            </div>
-            <div class="card">
-                <h3>Test Preparation</h3>
-                <p>GRE, TOEFL, IELTS—we've got you covered.</p>
-                <a href="services.html" class="cta">Start Preparing</a>
-            </div>
-            <div class="card">
-                <h3>University Applications</h3>
-                <p>Personalized guidance for a strong application.</p>
-                <a href="services.html" class="cta">Apply Now</a>
-            </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-file-alt text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">SOP & Document Review</h3>
+          <p>Expert feedback to strengthen your application materials.</p>
         </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Students Say</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial">
-                <p>"Aslat Guidance made my dream of studying in the USA a reality. Their support was invaluable!"</p>
-                <span>- Priya S.</span>
-            </div>
-            <div class="testimonial">
-                <p>"The team is incredibly supportive and knowledgeable. I felt confident every step of the way."</p>
-                <span>- Rajesh K.</span>
-            </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-passport text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Visa Interview Support</h3>
+          <p>Mock interviews and tips for a confident visa process.</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Aslat Guidance. All Rights Reserved.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-            </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-graduation-cap text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Test Preparation</h3>
+          <p>Resources and coaching for TOEFL, IELTS, and more.</p>
         </div>
-    </footer>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-money-check-alt text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Financial Document Coaching</h3>
+          <p>Guidance on bank statements and sponsor letters for admissions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="assets/js/main.js"></script>
+  <!-- Why ASLAT? Section -->
+  <section id="why-aslat" class="py-16 bg-gray-200">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Why Choose ASLAT Guidance?</h2>
+      <p class="text-lg mb-6">Founded by Nepali entrepreneurs living in the U.S., we bring real-world experience to guide you. Having mentored over 100+ Nepali students, we offer authentic, transparent support from application to arrival.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div>
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="University campus" class="rounded-lg shadow-lg">
+        </div>
+        <div class="flex flex-col justify-center">
+          <p class="text-lg">Our founders have walked the student journey, run businesses in the U.S., and understand the challenges you face. Trust us to guide you every step of the way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Post-Departure Service Section -->
+  <section id="post-departure" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Post-Departure Support</h2>
+      <p class="text-lg text-center mb-8">We’re with you even after you arrive. Our unique post-departure services help you thrive abroad.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-id-card text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">SEVIS & F-1 Status</h3>
+          <p>Guidance to maintain your student visa status.</p>
+        </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-briefcase text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">CPT/OPT Planning</h3>
+          <p>Support for work authorization and career planning.</p>
+        </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-home text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Housing & Community</h3>
+          <p>Help finding accommodation and connecting with Nepali communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-200">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+      <p class="text-lg mb-8">Ready to start your study abroad journey? Contact us today!</p>
+      <div class="max-w-md mx-auto">
+        <input type="text" id="name" placeholder="Name" class="w-full mb-4 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-700">
+        <input type="email" id="email" placeholder="Email" class="w-full mb-4 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-700">
+        <textarea id="message" placeholder="Your Message" class="w-full mb-4 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-700 h-32"></textarea>
+        <button onclick="submitForm()" class="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-800">Send Message</button>
+      </div>
+      <div class="mt-8 text-lg">
+        <p><strong>Address:</strong> ALE Complex, 2nd Floor, Boudha - Jorpati road, Gokarneshwor - 06, Kathmandu, Nepal 44600</p>
+        <p><strong>Phone:</strong> +977 970 105 1182</p>
+        <p><strong>WhatsApp:</strong> +977 970 105 1182 / +1 580 596 6002</p>
+        <p><strong>Email:</strong> <a href="mailto:inquiry.AslatGuidance@gmail.com" class="text-blue-700 hover:underline">inquiry.AslatGuidance@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>© 2025 Aslat Guidance. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
