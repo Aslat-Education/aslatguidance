@@ -7,78 +7,16 @@
   <meta name="description" content="Aslat Guidance offers expert study abroad consultancy for Nepali students, specializing in the U.S. with support for Australia, Canada, and the UK. Get personalized university selection, visa support, and post-departure assistance.">
   <meta name="keywords" content="study abroad, Nepal, U.S., university selection, visa support, consultancy">
   <meta name="author" content="Aslat Guidance">
-  <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="Aslat Guidance - Your Study Abroad Partner">
   <meta property="og:description" content="Expert guidance for Nepali students pursuing higher education in the U.S., Australia, Canada, and the UK.">
   <meta property="og:image" content="https://aslatguidance.com/assets/img/logo-hero.png">
   <meta property="og:url" content="https://aslatguidance.com/">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/img/logo-hero.png" type="image/png">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <style>
-    /* Custom styles for video, animations, and interactivity */
-    #hero-video {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-    .service-card:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-    }
-    .nav-link.active {
-      border-bottom: 2px solid #000000;
-    }
-    nav img {
-      height: 88px; /* Increased to h-[5.5rem] */
-      max-height: 100%;
-      vertical-align: middle;
-      transition: height 0.3s ease, transform 0.3s ease;
-    }
-    nav img:hover {
-      transform: scale(1.1);
-    }
-    /* Typewriter effect */
-    .typewriter {
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 2px solid #ffffff;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
-    @keyframes blink-caret {
-      from, to { border-color: transparent; }
-      50% { border-color: #ffffff; }
-    }
-    /* Responsive adjustments for logo */
-    @media (max-width: 640px) {
-      nav img {
-        height: 60px;
-      }
-    }
-    @media (min-width: 641px) and (max-width: 1024px) {
-      nav img {
-        height: 75px;
-      }
-    }
-    /* Fade-in on load */
-    body {
-      opacity: 0;
-      transition: opacity 500ms ease-in;
-    }
-    body.loaded {
-      opacity: 1;
-    }
-  </style>
 </head>
 <body class="bg-gray-100 font-sans" onload="document.body.classList.add('loaded')">
   <!-- Navigation -->
@@ -235,86 +173,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript for Interactivity, Animations, and Toast -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    // Initialize AOS
-    AOS.init();
-
-    // Smooth scrolling for navigation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    // Highlight active nav link on scroll
-    window.addEventListener('scroll', () => {
-      const sections = ['services', 'why-aslat', 'post-departure', 'contact'];
-      let current = '';
-      sections.forEach(section => {
-        const element = document.getElementById(section);
-        if (element.getBoundingClientRect().top <= 100) {
-          current = section;
-        }
-      });
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active');
-        }
-      });
-
-      // Shrink logo on scroll
-      const logo = document.getElementById('logo');
-      if (window.scrollY > 50) {
-        logo.style.height = '64px'; // h-[4rem]
-      } else {
-        logo.style.height = '88px'; // h-[5.5rem]
-      }
-    });
-
-    // Typewriter effect for subtitle
-    const subtitle = document.querySelector('.typewriter');
-    const text = "Expert guidance for Nepali students to the U.S., Australia, Canada, and the UK.";
-    let i = 0;
-    function typeWriter() {
-      if (i < text.length) {
-        subtitle.textContent += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100);
-      }
-    }
-    typeWriter();
-
-    // Toast-style confirmation for contact form
-    function submitForm() {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-
-      if (name && email && message) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (emailRegex.test(email)) {
-          const toast = document.createElement('div');
-          toast.className = 'fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded shadow-lg transition-opacity duration-300 opacity-0';
-          toast.textContent = `Thank you, ${name}! We’ll contact you at ${email} soon.`;
-          document.body.appendChild(toast);
-          setTimeout(() => toast.style.opacity = '1', 10);
-          setTimeout(() => toast.style.opacity = '0', 3000);
-          setTimeout(() => document.body.removeChild(toast), 3300);
-
-          document.getElementById('name').value = '';
-          document.getElementById('email').value = '';
-          document.getElementById('message').value = '';
-        } else {
-          alert('Please enter a valid email address.');
-        }
-      } else {
-        alert('Please fill out all fields.');
-      }
-    }
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
