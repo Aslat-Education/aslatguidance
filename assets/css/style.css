@@ -10,47 +10,57 @@ body {
   background-color: #f3f4f6;
   color: #1f2937;
   line-height: 1.6;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 /* Navigation */
 nav {
-  background-color: #1e40af;
-  color: #ffffff;
-  padding: 1rem;
+  background-color: #f3f4f6;
+  color: #000000;
+  padding: 1.5rem 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 nav img {
-  height: 40px;
+  height: 88px;
+  max-height: 100%;
   vertical-align: middle;
+  transition: height 0.3s ease, transform 0.3s ease;
+}
+
+nav img:hover {
+  transform: scale(1.1);
 }
 
 .nav-link {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   margin-left: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
+  color: #1e40af;
   text-decoration: underline;
 }
 
 .nav-link.active {
-  border-bottom: 2px solid #f59e0b;
+  border-bottom: 2px solid #000000;
 }
 
 /* Hero Section */
-#hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
 #hero-video {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -72,28 +82,21 @@ nav img {
   color: #ffffff;
 }
 
-#hero h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #ffffff;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-#hero p {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-#hero a {
-  background-color: #1e40af;
-  color: #ffffff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-#hero a:hover {
-  background-color: #1e3a8a;
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #ffffff; }
 }
 
 /* Sections */
@@ -147,6 +150,13 @@ section h2 {
   border: 1px solid #d1d5db;
   border-radius: 0.375rem;
   font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #1e40af;
 }
 
 #contact button {
@@ -156,24 +166,11 @@ section h2 {
   border-radius: 9999px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #contact button:hover {
   background-color: #1e3a8a;
-}
-
-#contact .details {
-  margin-top: 2rem;
-  font-size: 1rem;
-}
-
-#contact a {
-  color: #1e40af;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  text-decoration: underline;
 }
 
 /* Footer */
