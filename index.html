@@ -24,18 +24,26 @@
     .nav-link.active {
       border-bottom: 2px solid #ffffff;
     }
+    nav img {
+      height: 40px; /* Base height, scaled to 60px (1.5x) */
+      vertical-align: middle;
+      transition: transform 0.3s ease;
+    }
+    nav img:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Navigation -->
-  <nav class="bg-blue-900 text-white py-4 fixed w-full top-0 z-10 shadow-lg">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Aslat Guidance</h1>
-      <div class="space-x-4">
-        <a href="#services" class="nav-link hover:underline">Services</a>
-        <a href="#why-aslat" class="nav-link hover:underline">Why ASLAT?</a>
-        <a href="#post-departure" class="nav-link hover:underline">Post-Departure</a>
-        <a href="#contact" class="nav-link hover:underline">Contact</a>
+  <nav class="bg-blue-900 text-white py-6 fixed w-full top-0 z-10 shadow-lg">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <img src="assets/img/logo-hero.png" alt="Aslat Guidance Logo" class="h-[3.75rem]">
+      <div class="space-x-6">
+        <a href="#services" class="nav-link text-lg hover:underline">Services</a>
+        <a href="#why-aslat" class="nav-link text-lg hover:underline">Why ASLAT?</a>
+        <a href="#post-departure" class="nav-link text-lg hover:underline">Post-Departure</a>
+        <a href="#contact" class="nav-link text-lg hover:underline">Contact</a>
       </div>
     </div>
   </nav>
@@ -147,6 +155,11 @@
   <footer class="bg-blue-900 text-white py-6">
     <div class="container mx-auto px-4 text-center">
       <p>© 2025 Aslat Guidance. All rights reserved.</p>
+      <div class="mt-4 text-sm">
+        <p><strong>Address:</strong> ALE Complex, 2nd Floor, Boudha - Jorpati road, Gokarneshwor - 06, Kathmandu, Nepal 44600</p>
+        <p><strong>Phone:</strong> +977 970 105 1182</p>
+        <p><strong>WhatsApp:</strong> +977 970 105 1182 / +1 580 596 6002</p>
+      </div>
     </div>
   </footer>
 
