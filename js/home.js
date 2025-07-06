@@ -40,10 +40,10 @@ if (searchForm) {
     if (matches.length) {
       html = `<div class="alert alert-success"><strong>Matching Universities:</strong><ul>`;
       matches.forEach(u => {
-        html += `<li>${u.name} <span class="badge bg-primary">${u.major}</span></li>`;
+        html += `<li>${u.name} <span class="badge bg-gold text-dark">${u.major}</span></li>`;
       });
       html += `</ul></div>
-      <a href="contact.html" class="btn btn-success mt-2">Want a detailed shortlist? Book a free consultation &rarr;</a>`;
+      <a href="contact.html" class="btn btn-gold mt-2">Want a detailed shortlist? Book a free consultation &rarr;</a>`;
     } else {
       html = `<div class="alert alert-warning">No matches found. Try adjusting your GPA or budget, or <a href="contact.html">contact us</a> for personalized advice.</div>`;
     }
