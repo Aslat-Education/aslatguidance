@@ -1,32 +1,42 @@
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+}
+.text-gold, .btn-gold, .bg-gold {
+  color: #C7B078 !important;
+}
+.btn-gold, .bg-gold {
+  background: linear-gradient(93deg, #C7B078 60%, #FFD700 100%) !important;
+  border: none !important;
+}
+.btn-gold:hover, .btn-gold:focus {
+  background: linear-gradient(93deg, #FFD700 60%, #C7B078 100%) !important;
+  color: #1A1D26 !important;
+}
+.btn-outline-gold {
+  border: 2px solid #C7B078 !important;
+  color: #C7B078 !important;
+  background: transparent !important;
+}
+.btn-outline-gold:hover, .btn-outline-gold:focus {
+  background: #C7B078 !important;
+  color: #1A1D26 !important;
 }
 .hero-section {
-  background: linear-gradient(120deg, #0d6efd 70%, #f8f9fa 100%);
-  min-height: 70vh;
+  background: linear-gradient(120deg, #121933 85%, #C7B078 100%);
+  min-height: 60vh;
   padding-top: 70px;
   padding-bottom: 40px;
 }
 .hero-img {
-  filter: drop-shadow(0 10px 40px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 10px 40px rgba(0,0,0,0.15));
 }
-.bg-gradient {
-  background: linear-gradient(120deg, #0d6efd 90%, #003e7d 100%);
-}
-#search-tool {
-  color: #fff;
-}
-.card-title {
-  color: #0d6efd;
-}
-blockquote {
-  font-size: 1.1rem;
-  color: #555;
+.card-title.text-gold {
+  font-weight: 600;
 }
 .counter {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #0d6efd;
   transition: color 0.2s;
 }
 #chat-widget {
@@ -46,11 +56,18 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
   transition: box-shadow 0.2s;
 }
 .chat-btn img {
   width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #C7B078 !important;
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   .hero-section {
@@ -59,5 +76,8 @@ blockquote {
   }
   .counter {
     font-size: 1.5rem;
+  }
+  #footer-logo {
+    height: 40px !important;
   }
 }
