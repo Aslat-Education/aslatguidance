@@ -22,10 +22,10 @@
   </div>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <img src="assets/img/logo-full.png" alt="Aslat Guidance Logo" height="42" />
+        <img src="assets/img/logo-full.png" alt="Aslat Guidance Logo" height="44" style="max-width:170px;" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -47,21 +47,30 @@
     <div class="container">
       <div class="row align-items-center gy-4">
         <div class="col-md-6 text-center text-md-start">
-          <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Your Gateway to Studying in the <span class="text-gold">USA</span></h1>
-          <p class="lead mt-3 mb-4 animate__animated animate__fadeInUp">Expert guidance for Nepali students: admissions, test prep, visa, post-arrival and more.</p>
+          <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">
+            Your Gateway to <span class="text-gold">Studying in the USA</span>
+          </h1>
+          <p class="lead mt-3 mb-4 animate__animated animate__fadeInUp">
+            Expert guidance for Nepali students: admissions, test prep, visa, post-arrival and more.
+          </p>
           <a href="#search-tool" class="btn btn-gold btn-lg me-2 animate__animated animate__fadeInUp">Find My University</a>
           <a href="contact.html" class="btn btn-outline-light btn-lg animate__animated animate__fadeInUp">Book Free Consultation</a>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80"
-            alt="US University Students" class="img-fluid rounded shadow hero-img animate__animated animate__fadeInUp" style="max-height: 360px;">
+        <div class="col-md-6 text-center hero-img-col">
+          <div class="hero-img-wrap animate__animated animate__fadeInUp">
+            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80"
+              alt="US University Students" class="img-fluid rounded shadow hero-img" style="max-height: 365px;">
+          </div>
         </div>
       </div>
+    </div>
+    <div class="hero-logo-bg">
+      <img src="assets/img/logo-full.png" alt="Aslat Guidance Logo" class="hero-logo-bg-img">
     </div>
   </header>
 
   <!-- Animated Stats Section -->
-  <section class="bg-white py-5">
+  <section class="stats-section py-5">
     <div class="container">
       <div class="row text-center">
         <div class="col-6 col-md-3 mb-4">
@@ -90,7 +99,7 @@
       <h2 class="mb-4 text-center text-dark">Our Services</h2>
       <div class="row g-4 text-center">
         <div class="col-md-4">
-          <div class="card h-100 shadow border-0">
+          <div class="card h-100 shadow-sm border-0 service-card-hover">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="University Application" class="card-img-top" style="height:160px;object-fit:cover;">
             <div class="card-body">
               <h5 class="card-title text-gold">University Application Assistance</h5>
@@ -99,7 +108,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow border-0">
+          <div class="card h-100 shadow-sm border-0 service-card-hover">
             <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Test Preparation" class="card-img-top" style="height:160px;object-fit:cover;">
             <div class="card-body">
               <h5 class="card-title text-gold">Test Preparation</h5>
@@ -108,7 +117,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow border-0">
+          <div class="card h-100 shadow-sm border-0 service-card-hover">
             <img src="https://images.unsplash.com/photo-1510936111840-6cef99faf2a9?auto=format&fit=crop&w=600&q=80" alt="Personalized University Shortlisting" class="card-img-top" style="height:160px;object-fit:cover;">
             <div class="card-body">
               <h5 class="card-title text-gold">Personalized University Shortlisting</h5>
@@ -121,9 +130,9 @@
   </section>
 
   <!-- Interactive University Search Tool (Demo) -->
-  <section id="search-tool" class="py-5" style="background: linear-gradient(120deg, #121933 80%, #c7b078 100%);">
+  <section id="search-tool" class="py-5" style="background: linear-gradient(120deg, #e6e8ea 70%, #c7b078 100%);">
     <div class="container">
-      <h2 class="mb-4 text-center text-white">Find Your Best-Fit US University</h2>
+      <h2 class="mb-4 text-center text-dark">Find Your Best-Fit US University</h2>
       <form id="searchForm" class="mx-auto bg-white rounded shadow p-4" style="max-width: 600px;">
         <div class="row g-3">
           <div class="col-md-4">
