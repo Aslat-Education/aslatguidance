@@ -1,322 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Aslat Guidance – Study in the USA</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google Fonts: Poppins for modern look -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aslat Guidance - Your trusted pathway to higher education abroad.">
+    <title>Aslat Guidance - Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-  <!-- Sticky Chat Widget -->
-  <div id="chat-widget">
-    <a href="https://wa.me/9779701051182" target="_blank" class="chat-btn shadow" aria-label="WhatsApp">
-      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/whatsapp.svg" alt="WhatsApp">
-    </a>
-    <a href="contact.html" class="chat-btn shadow" aria-label="Contact">
-      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chat.svg" alt="Contact">
-    </a>
-  </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Aslat Guidance</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="why-aslat.html">Why Aslat?</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient shadow-sm sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <img src="assets/img/logo-full.png" alt="Aslat Guidance Logo" height="44" style="max-width:170px;" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#unique">Why Aslat?</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#search-tool">Search Universities</a></li>
-          <li class="nav-item"><a class="nav-link" href="#postdeparture">US Support</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-gold text-dark ms-2 px-3" href="contact.html">Book Consultation</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="assets/video/hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Your Trusted Pathway to Education Abroad</h1>
+            <p>Dreaming big? Let's make it happen.</p>
+            <a href="services.html" class="cta">Explore Services</a>
+        </div>
+    </section>
 
-  <!-- Hero Section -->
-  <header class="hero-section text-white d-flex align-items-center">
-    <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-md-6 text-center text-md-start">
-          <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">
-            US-Based Mentors. <span class="text-gold">Real Guidance</span>.
-          </h1>
-          <p class="lead mt-3 mb-4 animate__animated animate__fadeInUp">
-            We are Nepali professionals who studied, lived, and built careers in the USA.<br>
-            Get honest, step-by-step support from people who know the journey—and care about your future.
-          </p>
-          <a href="#unique" class="btn btn-gold btn-lg me-2 animate__animated animate__fadeInUp">Why Choose Us?</a>
-          <a href="contact.html" class="btn btn-outline-light btn-lg animate__animated animate__fadeInUp">Book Free Consultation</a>
-        </div>
-        <div class="col-md-6 text-center hero-img-col">
-          <div class="hero-img-wrap animate__animated animate__fadeInUp">
-            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80"
-              alt="US University Students" class="img-fluid rounded shadow hero-img" style="max-height: 365px;">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-logo-bg">
-      <img src="assets/img/logo-full.png" alt="Aslat Guidance Logo" class="hero-logo-bg-img">
-    </div>
-  </header>
+    <!-- Why Aslat Section -->
+    <section class="why-aslat">
+        <h2>Why Choose Aslat?</h2>
+        <p>With firsthand experience and an authentic approach, we guide students every step of the way—from university selection to post-departure services.</p>
+        <a href="why-aslat.html" class="cta">Learn More</a>
+    </section>
 
-  <!-- Unique Value Section -->
-  <section id="unique" class="unique-section py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center text-dark">What Makes Us Unique?</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="unique-card p-4 h-100 shadow-sm bg-white text-center rounded-4 animate__animated animate__fadeInLeft">
-            <div class="icon mb-3">
-              <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/people-fill.svg" alt="Mentor" style="width:40px;height:40px;filter: invert(44%) sepia(73%) saturate(430%) hue-rotate(14deg) brightness(90%) contrast(92%);">
+    <!-- Services Section -->
+    <section class="services-overview">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Study Destinations</h3>
+                <p>USA, Australia, Canada—explore your options.</p>
+                <a href="services.html" class="cta">Discover More</a>
             </div>
-            <h5 class="text-gold mb-2">Mentored 100+ Nepali Students in the US</h5>
-            <p class="mb-0">
-              Our team has lived the US journey—mentoring students in housing, campus life, and career-building from day one.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="unique-card p-4 h-100 shadow-sm bg-white text-center rounded-4 animate__animated animate__fadeInUp">
-            <div class="icon mb-3">
-              <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/house-door-fill.svg" alt="Housing" style="width:40px;height:40px;filter: invert(44%) sepia(73%) saturate(430%) hue-rotate(14deg) brightness(90%) contrast(92%);">
+            <div class="card">
+                <h3>Test Preparation</h3>
+                <p>GRE, TOEFL, IELTS—we've got you covered.</p>
+                <a href="services.html" class="cta">Start Preparing</a>
             </div>
-            <h5 class="text-gold mb-2">Real US Support: Housing & Community</h5>
-            <p class="mb-0">
-              We help you find safe accommodation and connect you with genuine local Nepali communities—before and after you arrive.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="unique-card p-4 h-100 shadow-sm bg-white text-center rounded-4 animate__animated animate__fadeInRight">
-            <div class="icon mb-3">
-              <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/emoji-smile-fill.svg" alt="Personal" style="width:40px;height:40px;filter: invert(44%) sepia(73%) saturate(430%) hue-rotate(14deg) brightness(90%) contrast(92%);">
+            <div class="card">
+                <h3>University Applications</h3>
+                <p>Personalized guidance for a strong application.</p>
+                <a href="services.html" class="cta">Apply Now</a>
             </div>
-            <h5 class="text-gold mb-2">Personal and Honest Guidance</h5>
-            <p class="mb-0">
-              Get step-by-step support from Nepalis who’ve studied, worked, and succeeded in the US—no gimmicks, just authentic advice.
-            </p>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center text-dark">Our Services</h2>
-      <div class="row g-4 text-center">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 service-card-hover">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="University Application" class="card-img-top" style="height:160px;object-fit:cover;">
-            <div class="card-body">
-              <h5 class="card-title text-gold">University Application Assistance</h5>
-              <p class="card-text">Guided support for the entire US university application process, including essays, forms, and timelines.</p>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Aslat Guidance made my dream of studying in the USA a reality. Their support was invaluable!"</p>
+                <span>- Priya S.</span>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 service-card-hover">
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Test Preparation" class="card-img-top" style="height:160px;object-fit:cover;">
-            <div class="card-body">
-              <h5 class="card-title text-gold">Test Preparation</h5>
-              <p class="card-text">IELTS, TOEFL, SAT: proven strategies and coaching from mentors who’ve aced the exams themselves.</p>
+            <div class="testimonial">
+                <p>"The team is incredibly supportive and knowledgeable. I felt confident every step of the way."</p>
+                <span>- Rajesh K.</span>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 service-card-hover">
-            <img src="https://images.unsplash.com/photo-1510936111840-6cef99faf2a9?auto=format&fit=crop&w=600&q=80" alt="Personalized University Shortlisting" class="card-img-top" style="height:160px;object-fit:cover;">
-            <div class="card-body">
-              <h5 class="card-title text-gold">Personalized Shortlisting</h5>
-              <p class="card-text">Shortlist US universities that fit your academic profile, budget, and career dreams—no random guesswork.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Interactive University Search Tool (Demo) -->
-  <section id="search-tool" class="py-5" style="background: linear-gradient(120deg, #e6e8ea 70%, #c7b078 100%);">
-    <div class="container">
-      <h2 class="mb-4 text-center text-dark">Find Your Best-Fit US University</h2>
-      <form id="searchForm" class="mx-auto bg-white rounded shadow p-4" style="max-width: 600px;">
-        <div class="row g-3">
-          <div class="col-md-4">
-            <input type="number" min="2.0" max="4.0" step="0.01" class="form-control" placeholder="Your GPA (4.0)" id="gpa" required>
-          </div>
-          <div class="col-md-4">
-            <input type="number" min="5000" step="500" class="form-control" placeholder="Annual Budget ($)" id="budget" required>
-          </div>
-          <div class="col-md-4">
-            <select class="form-select" id="major" required>
-              <option value="">Major</option>
-              <option>Computer Science</option>
-              <option>Business</option>
-              <option>Engineering</option>
-              <option>Health Sciences</option>
-              <option>Other</option>
-            </select>
-          </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Aslat Guidance. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
         </div>
-        <button type="submit" class="btn btn-gold btn-lg mt-4 w-100">Show Matching Universities</button>
-      </form>
-      <div id="searchResults" class="mt-4"></div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Post-Departure Services Section -->
-  <section id="postdeparture" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center text-dark">Real Support After You Land in the US</h2>
-      <p class="text-center mb-5">
-        Our team is backed by U.S.-based mentors who offer hands-on help—before and after your arrival. From picking you up at the airport to helping you settle in, we’re here for you in the real world.
-      </p>
-      <div class="row g-4">
-        <div class="col-md-3">
-          <div class="card h-100 shadow text-center border-0">
-            <div class="card-body">
-              <h5 class="card-title text-gold">Housing & Airport Pickup</h5>
-              <p class="card-text">Find safe, affordable accommodation and get greeted by real Nepali mentors when you land.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 shadow text-center border-0">
-            <div class="card-body">
-              <h5 class="card-title text-gold">Connect with Nepali Communities</h5>
-              <p class="card-text">We introduce you to Nepali societies, events, and support networks in your US city.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 shadow text-center border-0">
-            <div class="card-body">
-              <h5 class="card-title text-gold">Career & Internship Guidance</h5>
-              <p class="card-text">Get mentorship for CPT, OPT, internships, and launching your career in the US job market.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 shadow text-center border-0">
-            <div class="card-body">
-              <h5 class="card-title text-gold">College Transfers & More</h5>
-              <p class="card-text">Need to switch colleges or majors? We’ll help you navigate US systems smoothly.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a href="postdeparture-us.html" class="btn btn-outline-gold btn-lg">Learn More</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Slider -->
-  <section id="testimonials" class="py-5 bg-white">
-    <div class="container">
-      <h2 class="mb-4 text-center text-dark">What Our Students Say</h2>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card shadow mx-auto" style="max-width: 600px;">
-              <div class="row g-0 align-items-center">
-                <div class="col-3 text-center">
-                  <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle m-3" style="width:72px;" alt="Srijana">
-                </div>
-                <div class="col-9">
-                  <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                      <p>Aslat’s team didn’t just help with my application—they picked me up at the airport and connected me to a Nepali group in Texas. So grateful!</p>
-                      <footer class="blockquote-footer mt-2">Srijana, UT Austin</footer>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card shadow mx-auto" style="max-width: 600px;">
-              <div class="row g-0 align-items-center">
-                <div class="col-3 text-center">
-                  <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle m-3" style="width:72px;" alt="Prakash">
-                </div>
-                <div class="col-9">
-                  <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                      <p>My mentor from Aslat had lived in the US for years—his insights about housing, jobs, and community saved me time and money!</p>
-                      <footer class="blockquote-footer mt-2">Prakash, Boston University</footer>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card shadow mx-auto" style="max-width: 600px;">
-              <div class="row g-0 align-items-center">
-                <div class="col-3 text-center">
-                  <img src="https://randomuser.me/api/portraits/women/80.jpg" class="rounded-circle m-3" style="width:72px;" alt="Anisha">
-                </div>
-                <div class="col-9">
-                  <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                      <p>I was nervous about moving to the US, but Aslat’s team answered every question honestly and made me feel at home.</p>
-                      <footer class="blockquote-footer mt-2">Anisha, University of Florida</footer>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-gold rounded-circle"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-gold rounded-circle"></span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <div class="container">
-      <div class="row g-3 align-items-center justify-content-center">
-        <div class="col-12 col-md-3 mb-2 mb-md-0">
-          <img src="assets/img/logo-full.png" alt="Aslat Guidance Logo" style="height:54px;">
-        </div>
-        <div class="col-12 col-md-6">
-          <ul class="list-unstyled mb-1">
-            <li class="fw-bold mb-1">Address:</li>
-            <li>ALE Complex, 2nd Floor, Boudha - Jorpati Road, Gokarneshwor - 06, Kathmandu, Nepal 44600</li>
-          </ul>
-          <ul class="list-unstyled mb-1">
-            <li><span class="fw-bold">Phone:</span> <a href="tel:+9779701051182" class="text-gold text-decoration-none">+977 970 105 1182</a></li>
-            <li><span class="fw-bold">WhatsApp:</span> <a href="https://wa.me/9779701051182" class="text-gold text-decoration-none">+977 970 105 1182</a> / <a href="https://wa.me/15805966002" class="text-gold text-decoration-none">+1 580 596 6002</a></li>
-            <li><span class="fw-bold">Email:</span> <a href="mailto:inquiry@aslatguidance.com" class="text-gold text-decoration-none">inquiry@aslatguidance.com</a></li>
-            <li><span class="fw-bold">Website:</span> <a href="https://www.aslatguidance.com" class="text-gold text-decoration-none">www.aslatguidance.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <small class="d-block mt-3">&copy; 2025 Aslat Guidance. All Rights Reserved.</small>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/home.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
