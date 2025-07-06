@@ -10,12 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
   const sections = ['services', 'why-aslat', 'post-departure', 'contact'];
   let current = '';
-  for (const section of sections) {
+  sections.forEach(section => {
     const element = document.getElementById(section);
     if (element.getBoundingClientRect().top <= 100) {
       current = section;
     }
-  }
+  });
   document.querySelectorAll('.nav-link').forEach(link => {
     link.classList.remove('active');
     if (link.getAttribute('href') === `#${current}`) {
@@ -24,17 +24,34 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Form submission placeholder (no backend, shows alert)
+// Form submission with validation
 function submitForm() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
   if (name && email && message) {
-    alert('Thank you for your message! We will get back to you soon at ' + email + '.');
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('message').value = '';
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailRegex.test(email)) {
+      alert(`Thank you, ${name}! We will contact you at ${email} soon.`);
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    } else {
+      alert('Please enter a valid email address.');
+    }
   } else {
     alert('Please fill out all fields.');
   }
 }
+
+// Ensure video plays on load
+document.addEventListener('DOMContentLoaded', () => {
+  const video = document.getElementById('hero-video');
+  if (video) {
+    video.play().catch(error => {
+      console.log('Video autoplay failed:', error);
+    });
+  }
+});
