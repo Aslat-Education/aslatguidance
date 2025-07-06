@@ -1,3 +1,6 @@
+// Initialize AOS
+AOS.init();
+
 // Smooth scrolling for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -22,19 +25,46 @@ window.addEventListener('scroll', () => {
       link.classList.add('active');
     }
   });
+
+  // Shrink logo on scroll
+  const logo = document.getElementById('logo');
+  if (window.scrollY > 50) {
+    logo.style.height = '64px';
+  } else {
+    logo.style.height = '88px';
+  }
 });
 
-// Form submission with validation
+// Typewriter effect for subtitle
+const subtitle = document.querySelector('.typewriter');
+const text = "Expert guidance for Nepali students to the U.S., Australia, Canada, and the UK.";
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    subtitle.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+typeWriter();
+
+// Toast-style confirmation for contact form
 function submitForm() {
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
 
   if (name && email && message) {
-    // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailRegex.test(email)) {
-      alert(`Thank you, ${name}! We will contact you at ${email} soon.`);
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded shadow-lg transition-opacity duration-300 opacity-0';
+      toast.textContent = `Thank you, ${name}! We’ll contact you at ${email} soon.`;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.style.opacity = '1', 10);
+      setTimeout(() => toast.style.opacity = '0', 3000);
+      setTimeout(() => document.body.removeChild(toast), 3300);
+
       document.getElementById('name').value = '';
       document.getElementById('email').value = '';
       document.getElementById('message').value = '';
@@ -45,13 +75,3 @@ function submitForm() {
     alert('Please fill out all fields.');
   }
 }
-
-// Ensure video plays on load
-document.addEventListener('DOMContentLoaded', () => {
-  const video = document.getElementById('hero-video');
-  if (video) {
-    video.play().catch(error => {
-      console.log('Video autoplay failed:', error);
-    });
-  }
-});
