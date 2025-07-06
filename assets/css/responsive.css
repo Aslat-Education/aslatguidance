@@ -1,46 +1,81 @@
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
+/* Mobile (up to 640px) */
+@media (max-width: 640px) {
+  nav {
+    padding: 1rem;
+  }
 
-    .hero-content p {
-        font-size: 1rem;
-    }
+  nav img {
+    height: 30px;
+  }
 
-    .service-cards {
-        flex-direction: column;
-        align-items: center;
-    }
+  .nav-link {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+  }
 
-    .card {
-        width: 90%;
-    }
+  #hero h2 {
+    font-size: 1.5rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  #hero a {
+    padding: 0.5rem 1rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  #why-aslat .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #contact .max-w-md {
+    max-width: 100%;
+  }
 }
 
-@media (max-width: 480px) {
-    header .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
+/* Tablet (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .nav-link {
+    margin-left: 1.25rem;
+  }
 
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
+  #hero h2 {
+    font-size: 2rem;
+  }
 
-    .hero-content p {
-        font-size: 0.9rem;
-    }
+  .service-card {
+    padding: 1.25rem;
+  }
 
-    .why-aslat h2 {
-        font-size: 1.5rem;
-    }
+  #why-aslat .grid {
+    grid-template-columns: 1fr;
+  }
 
-    .why-aslat p {
-        font-size: 0.9rem;
-    }
+  #contact .max-w-md {
+    max-width: 80%;
+  }
+}
 
-    .services-overview h2 {
-        font-size: 1.5rem;
-    }
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  #why-aslat .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #contact .max-w-md {
+    max-width: 50%;
+  }
 }
