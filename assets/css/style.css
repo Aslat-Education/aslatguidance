@@ -58,6 +58,18 @@ body {
   height: 440px;
   max-width: none;
 }
+.unique-section {
+  background: linear-gradient(97deg, #f4f5f7 70%, #e6e8ea 100%);
+}
+.unique-card {
+  border-radius: 1.7rem !important;
+  border: none !important;
+  transition: box-shadow 0.22s, transform 0.22s;
+}
+.unique-card:hover {
+  box-shadow: 0 8px 32px rgba(199,176,120,0.16), 0 2px 12px rgba(0,0,0,0.09);
+  transform: translateY(-6px) scale(1.03);
+}
 .card-title.text-gold {
   font-weight: 600;
 }
