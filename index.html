@@ -22,7 +22,7 @@
       transition: transform 0.3s ease;
     }
     .nav-link.active {
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid #000000; /* Black border for contrast with new colors */
     }
     nav img {
       height: 40px; /* Base height, scaled to 60px (1.5x) */
@@ -36,7 +36,10 @@
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Navigation -->
-  <nav class="bg-blue-900 text-white py-6 fixed w-full top-0 z-10 shadow-lg">
+  <!-- Option 1: Light Gray -->
+  <!-- <nav class="bg-gray-200 text-black py-6 fixed w-full top-0 z-10 shadow-lg"> -->
+  <!-- Option 2: Gold -->
+  <nav class="bg-yellow-500 text-black py-6 fixed w-full top-0 z-10 shadow-lg">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <img src="assets/img/logo-hero.png" alt="Aslat Guidance Logo" class="h-[3.75rem]">
       <div class="space-x-6">
@@ -66,26 +69,31 @@
   <section id="services" class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-graduation-cap text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Standardized & English Proficiency Test Preparation</h3>
+          <p>Resources and coaching for TOEFL, IELTS, and more.</p>
+        </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-users text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Study Abroad Career Counseling</h3>
+          <p>Personalized advice to align your goals with global opportunities.</p>
+        </div>
         <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
           <i class="fas fa-university text-blue-700 text-3xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Personalized University Selection</h3>
+          <h3 class="text-xl font-semibold mb-2">Course and University Selection</h3>
           <p>Tailored recommendations based on your GPA, goals, and budget.</p>
         </div>
         <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
           <i class="fas fa-file-alt text-blue-700 text-3xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">SOP & Document Review</h3>
+          <h3 class="text-xl font-semibold mb-2">University Application Assistance</h3>
           <p>Expert feedback to strengthen your application materials.</p>
         </div>
         <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
           <i class="fas fa-passport text-blue-700 text-3xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Visa Interview Support</h3>
+          <h3 class="text-xl font-semibold mb-2">Visa Documentation & Interview Support</h3>
           <p>Mock interviews and tips for a confident visa process.</p>
-        </div>
-        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
-          <i class="fas fa-graduation-cap text-blue-700 text-3xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Test Preparation</h3>
-          <p>Resources and coaching for TOEFL, IELTS, and more.</p>
         </div>
         <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
           <i class="fas fa-money-check-alt text-blue-700 text-3xl mb-4"></i>
@@ -112,26 +120,41 @@
     </div>
   </section>
 
-  <!-- Post-Departure Service Section -->
+  <!-- Post-Departure Support Section -->
   <section id="post-departure" class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Post-Departure Support</h2>
       <p class="text-lg text-center mb-8">We’re with you even after you arrive. Our unique post-departure services help you thrive abroad.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-home text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Housing & Community</h3>
+          <p>Help finding accommodation and connecting with Nepali communities.</p>
+        </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
           <i class="fas fa-id-card text-blue-700 text-3xl mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">SEVIS & F-1 Status</h3>
           <p>Guidance to maintain your student visa status.</p>
         </div>
         <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-exchange-alt text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">College Transfer Assistance</h3>
+          <p>Support for seamless transitions between institutions.</p>
+        </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
           <i class="fas fa-briefcase text-blue-700 text-3xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">CPT/OPT Planning</h3>
+          <h3 class="text-xl font-semibold mb-2">CPT / OPT Planning</h3>
           <p>Support for work authorization and career planning.</p>
         </div>
         <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
-          <i class="fas fa-home text-blue-700 text-3xl mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Housing & Community</h3>
-          <p>Help finding accommodation and connecting with Nepali communities.</p>
+          <i class="fas fa-graduation-cap text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Degree Planning</h3>
+          <p>Guidance to align your academic path with your goals.</p>
+        </div>
+        <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+          <i class="fas fa-briefcase text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Post Study Opportunities</h3>
+          <p>Advice on career options after graduation.</p>
         </div>
       </div>
     </div>
