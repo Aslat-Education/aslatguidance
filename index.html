@@ -22,26 +22,35 @@
       transition: transform 0.3s ease;
     }
     .nav-link.active {
-      border-bottom: 2px solid #000000; /* Black border for contrast with new colors */
+      border-bottom: 2px solid #000000; /* Black border for contrast with gray */
     }
     nav img {
-      height: 40px; /* Base height, scaled to 60px (1.5x) */
+      height: 72px; /* Increased to ~1.8x original h-10 (40px), custom value */
+      max-height: 100%; /* Ensures it doesn't exceed navbar height */
       vertical-align: middle;
       transition: transform 0.3s ease;
     }
     nav img:hover {
       transform: scale(1.1);
     }
+    /* Responsive adjustments for logo */
+    @media (max-width: 640px) {
+      nav img {
+        height: 48px; /* Scaled down for mobile */
+      }
+    }
+    @media (min-width: 641px) and (max-width: 1024px) {
+      nav img {
+        height: 60px; /* Adjusted for tablets */
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Navigation -->
-  <!-- Option 1: Light Gray -->
-  <!-- <nav class="bg-gray-200 text-black py-6 fixed w-full top-0 z-10 shadow-lg"> -->
-  <!-- Option 2: Gold -->
   <nav class="bg-gray-100 text-black py-6 fixed w-full top-0 z-10 shadow-lg">
     <div class="container mx-auto px-6 flex justify-between items-center">
-      <img src="assets/img/logo-hero.png" alt="Aslat Guidance Logo" class="h-[3.75rem]">
+      <img src="assets/img/logo-hero.png" alt="Aslat Guidance Logo" class="h-[4.5rem] max-h-full">
       <div class="space-x-6">
         <a href="#services" class="nav-link text-lg hover:underline">Services</a>
         <a href="#why-aslat" class="nav-link text-lg hover:underline">Why ASLAT?</a>
