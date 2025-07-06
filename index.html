@@ -7,7 +7,6 @@
   <meta name="description" content="Aslat Guidance offers expert study abroad consultancy for Nepali students, specializing in the U.S. with support for Australia, Canada, and the UK. Get personalized university selection, visa support, and post-departure assistance.">
   <meta name="keywords" content="study abroad, Nepal, U.S., university selection, visa support, consultancy">
   <meta name="author" content="Aslat Guidance">
-  <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="Aslat Guidance - Your Study Abroad Partner">
   <meta property="og:description" content="Expert guidance for Nepali students pursuing higher education in the U.S., Australia, Canada, and the UK.">
   <meta property="og:image" content="https://aslatguidance.com/assets/img/logo-hero.png">
@@ -36,7 +35,7 @@
       border-bottom: 2px solid #000000;
     }
     nav img {
-      height: 88px; /* Increased to h-[5.5rem] */
+      height: 88px;
       max-height: 100%;
       vertical-align: middle;
       transition: height 0.3s ease, transform 0.3s ease;
@@ -59,17 +58,6 @@
       from, to { border-color: transparent; }
       50% { border-color: #ffffff; }
     }
-    /* Responsive adjustments for logo */
-    @media (max-width: 640px) {
-      nav img {
-        height: 60px;
-      }
-    }
-    @media (min-width: 641px) and (max-width: 1024px) {
-      nav img {
-        height: 75px;
-      }
-    }
     /* Fade-in on load */
     body {
       opacity: 0;
@@ -77,6 +65,99 @@
     }
     body.loaded {
       opacity: 1;
+    }
+    /* Enhanced Hero Styling */
+    #hero .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.75); /* Stronger overlay for contrast */
+      z-index: 0;
+    }
+    #hero .content h2,
+    #hero .content p {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 640px) {
+      nav img {
+        height: 60px;
+      }
+      .nav-link {
+        margin-left: 0.5rem;
+        font-size: 0.875rem;
+      }
+      #hero h2 {
+        font-size: 1.5rem;
+      }
+      #hero p {
+        font-size: 1rem;
+      }
+      #hero a {
+        padding: 0.5rem 1rem;
+      }
+      #services .grid,
+      #post-departure .grid {
+        grid-template-columns: 1fr;
+      }
+      #contact .max-w-md {
+        max-width: 100%;
+      }
+    }
+    @media (min-width: 641px) and (max-width: 1024px) {
+      nav img {
+        height: 75px;
+      }
+      .nav-link {
+        margin-left: 1rem;
+      }
+      #hero h2 {
+        font-size: 2rem;
+      }
+      #hero p {
+        font-size: 1.25rem;
+      }
+      #hero a {
+        padding: 0.75rem 1.5rem;
+      }
+      #services .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      #post-departure .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (min-width: 1025px) {
+      #hero h2 {
+        font-size: 3rem;
+      }
+      #hero p {
+        font-size: 1.5rem;
+      }
+      #hero a {
+        padding: 1rem 2rem;
+      }
+      #services .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      #post-departure .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    @media (min-width: 1280px) {
+      .container {
+        max-width: 80%;
+      }
+    }
+    @media (min-width: 1920px) {
+      #hero h2 {
+        font-size: 4rem;
+      }
+      #hero p {
+        font-size: 2rem;
+      }
+      #hero a {
+        padding: 1.25rem 2.5rem;
+      }
     }
   </style>
 </head>
@@ -103,7 +184,7 @@
     </video>
     <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
     <div class="relative z-10 text-center px-4">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Your Journey to Study Abroad Begins Here</h2>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">Your Journey to Study Abroad Begins Here</h2>
       <p class="text-lg md:text-2xl mb-6 typewriter">Expert guidance for Nepali students to the U.S., Australia, Canada, and the UK.</p>
       <a href="#contact" class="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-800 transition-all duration-300">Start Now</a>
     </div>
@@ -112,8 +193,8 @@
   <!-- Services Section -->
   <section id="services" class="py-16 bg-white" data-aos="fade-up" data-aos-duration="1000">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <h2 class="text-3xl font-bold text-center mb-8 bg-white bg-opacity-90 py-4">Our Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-duration="800">
           <i class="fas fa-graduation-cap text-blue-700 text-3xl mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Standardized & English Proficiency Test Preparation</h3>
